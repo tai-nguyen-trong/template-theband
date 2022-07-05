@@ -1,0 +1,116 @@
+/* PC */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablet & Mobile*/
+@media (max-width: 1023px) {
+    .btn {
+        padding: 15px 16px;
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .contact-submit-btn {
+        font-size: 16px;
+    }
+
+    .socials-list {
+        font-size: 48px;
+    }
+
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+
+    #footer .coppy-right a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .contact-info {
+        line-height: 2;
+    }
+}
+
+
+
+/* Mobile */
+@media (max-width: 739px) {
+    .s-full-width {
+        width: 100% !important;
+    }
+
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
+    /* Hủy thuộc tính display:inline-block; của #nav để li kế thừa được hết chiều ngang*/
+    #nav {
+        display: block;  /* để cho thẻ li kế thừa hết chiều ngang vì trên điện thoại chỉ ấn được vào text của li mà ko kéo dài hết chiều ngang */
+
+    }
+
+    /* Hiển thị header hàng dọc */
+    #nav > li {
+        display: block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    /* Lấy thẻ con li đầu tiên là Home, cho thẻ li đầu là Home ko kế thừa hết chiều ngang vì nếu có thể thanh header con có thêm nội dung gì nữa */
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;  /*giá trị mặc định của position, là bỏ đi position:absolute đang ẩn menu con subnav */
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #header {
+        overflow: hidden;/*Đóng các thẻ li của header, chỉ hiện Home*/
+    }
+
+    #header .mobile-menu-btn {
+        display: block;  /* Hiển thị nút menu mobile */
+    }
+
+    #header .search-btn {
+        display: none;  /* Ẩn nút tìm kiếm */
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 32px;
+    }
+}
